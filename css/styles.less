@@ -11,27 +11,50 @@ body.container-fluid {
     height: 7px;
     background: url("../images/line-top.gif") repeat-x ;
 }
-.active-background-list-item {
+.active-design-list-item-rule {
     background: url("../images/tail-item.gif") repeat  ;
     box-shadow: 0px 1px 3px #c5c2a9 inset;
     color: #D53827 !important;
+    border-radius: 5px;
+}
+.transition-rule(@time:0.3s) {
+    -webkit-transition: all @time ease;
+	-moz-transition: all @time ease;
+	-o-transition: all @time ease;
+	transition: all @time ease;
 }
 header{
     padding-top: 20px;
     background: url("../images/tail-header.gif") repeat  ;
     li.active{
-        .active-background-list-item;
-        border-radius: 5px;
+        .active-design-list-item-rule;
         a {
             color: inherit !important;
             background-color: inherit !important;
         }
     }
     li>a:hover{
-        .active-background-list-item;
+        .active-design-list-item-rule;
+        .transition-rule;
+    }
+    li>a:hover + ul.dropdown-list ,
+    ul.dropdown-list:hover {
+        visibility: visible;
+        .active-design-list-item-rule;
+        .transition-rule;
+        opacity: 1;
     }
     nav>a {
         float: left;
+    }
+    .dropdown-list{
+        top: 43px;
+        list-style-type:none;
+        padding: 0px;
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        .transition-rule(0.1s);
     }
     ul{
         li + li{
@@ -45,18 +68,8 @@ header{
         height: auto;
         padding-bottom: 20px;
     }
-    .dropdown-list{
-        list-style-type:none;
-        padding: 0px;
-        position: absolute;
-            text-align: left;
-        background-color: green;
-        a {
-        background-color: red;
-        }
-    }
    .dropdown-list li{
-        padding-left: 1px;
+        padding-left: 14px;
     }
 }
 .button{
@@ -67,10 +80,7 @@ header{
     padding: 8px 16px;
     box-shadow: 0px 1px 2px #c5c2a9;
     height: auto;
-    -webkit-transition: all 0.3s ease;
-	-moz-transition: all 0.3s ease;
-	-o-transition: all 0.3s ease;
-	transition: all 0.3s ease;
+    .transition-rule;
     font-weight: 700;
 }
 .button:hover{
