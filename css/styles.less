@@ -7,6 +7,13 @@ body.container-fluid {
     padding-right: 0px;
     font-family: "PT Serif Cation",serif;
 }
+a,
+a:hover,
+a:active,
+a:visited{
+    text-decoration: none !important;
+    color: inherit;
+}
 .top-line /*header div:first-child */{
     height: 7px;
     background: url("../images/line-top.gif") repeat-x ;
@@ -28,13 +35,14 @@ header{
     li.active{
         .active-design-list-item-rule;
         a {
-            color: inherit !important;
+            color: #D53827 !important;
             background-color: inherit !important;
         }
     }
-    //li>a:hover
-    ul.nav>li:hover , li>a:hover{
+    li>a:hover{
         color: #D53827 !important;
+    }
+    ul.nav>li:hover , li>a:hover{
         .active-design-list-item-rule;
         .transition-rule;
     }
@@ -80,15 +88,11 @@ header{
         cursor: pointer;
         .transition-rule;
     }
-    i.fa-bars:hover{
-        color: #D53827;
-        .transition-rule;
-    }
 }
 .button{
     text-align: center;
     font-style: italic;
-    color: #FFF;
+    color: #FFF !important;
     background-color: #DB3222;
     padding: 10px 16px;
     box-shadow: 0px 1px 2px #c5c2a9;
@@ -99,5 +103,11 @@ header{
 .button:hover{
     color: #FFF;
     background-color: #343434;
-    text-decoration: none;
+}
+.hidden-menu{
+    list-style-type:none;
+    padding: 0px;
+    height: 0px;
+    opacity: 0;
+    .transition-rule;
 }
