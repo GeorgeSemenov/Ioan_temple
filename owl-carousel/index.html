@@ -27,11 +27,13 @@
                                    <link rel="shortcut icon" href="assets/ico/favicon.png">
   </head>
   <body>
+    </div>
       <div id="top-nav" class="navbar navbar-fixed-top">
         <div class="navbar-inner">
           <div class="container">
             <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
+
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
@@ -80,7 +82,7 @@
               <div id="owl-example" class="owl-carousel">
 
                 <div class="item darkCyan">
-                  <img src="assets/img/demo-slides/touch.png" alt="Touch">
+                  <img src="../images/Carousel/1.jpg" alt="Touch">
                     <h3>Touch</h3>
                     <h4>Can touch this</h4>
                 </div>
@@ -318,7 +320,7 @@
 &lt;script src="jquery-1.9.1.min.js"&gt;&lt;/script&gt;
 
 &lt;!-- Include js plugin --&gt;
-&lt;script src="assets/owl-carousel/owl.carousel.js"&gt;&lt;/script&gt;
+
 </pre>
           <h2>2. Set up your HTML</h2>
           <p>You don't need any special markup. All you need is to wrap your divs(owl works with any type element) inside the container element &lt;div class="owl-carousel"&gt;. Class "owl-carousel" is mandatory to apply proper styles that come from owl.carousel.css file.</p>
@@ -666,15 +668,20 @@ $(document).ready(function() {
 <pre class="pre-show prettyprint linenums">
 $("#owl-example").owlCarousel({
 
+   
+
+
+
+   
     // Most important owl features
-    items : 5,
+    items : 1,
     itemsCustom : false,
     itemsDesktop : [1199,4],
     itemsDesktopSmall : [980,3],
     itemsTablet: [768,2],
     itemsTabletSmall: false,
     itemsMobile : [479,1],
-    singleItem : false,
+    singleItem : true,
     itemsScaleUp : false,
 
     //Basic Speeds
@@ -907,6 +914,12 @@ owl.reinit(newOptions)
       ga('send', 'pageview');
     }
     </script>
-
+        <p>Here carousel begin.</p>
+         <div id="owl-demo" class="owl-carousel owl-theme">
+     
+      <div class="item"><img src="../images/carousel/1.jpg" alt="The Last of us"></div>
+      <div class="item"><img src="../images/carousel/2.jpg" alt="GTA V"></div>
+      <div class="item"><img src="../images/carousel/3.jpg" alt="Mirror Edge"></div>
+        <p>Here carousel ends.</p>
   </body>
 </html>

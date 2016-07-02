@@ -1451,21 +1451,21 @@ if (typeof Object.create !== "function") {
 
     $.fn.owlCarousel.options = {
 
-        items : 5,
+        items : 1,
         itemsCustom : false,
         itemsDesktop : [1199, 4],
         itemsDesktopSmall : [979, 3],
         itemsTablet : [768, 2],
         itemsTabletSmall : false,
         itemsMobile : [479, 1],
-        singleItem : false,
+        singleItem : true,
         itemsScaleUp : false,
 
         slideSpeed : 200,
         paginationSpeed : 800,
         rewindSpeed : 1000,
 
-        autoPlay : false,
+        autoPlay : true,
         stopOnHover : false,
 
         navigation : false,
