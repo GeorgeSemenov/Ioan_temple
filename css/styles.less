@@ -8,7 +8,6 @@ body.container-fluid {
     font-family: "PT Serif Cation",serif;
 }
 h3{
-    text-align: center;
     font-weight: 500;
 }
 @media (max-width: 768px){
@@ -16,15 +15,25 @@ h3{
         font-size:15px;
         padding-bottom: 0px;
     }
-}@media (min-width:768px)and(max-width: 991px){
+    h4{
+        font-size:10px;
+    }
+}
+    @media (min-width:768px)and(max-width: 991px){
     h3{
         font-size:25px;
+    }
+    h4{
+        font-size:20px;
     }
 }
 @media (min-width:992px){
     h3{
         font-size: 35px;
         padding-bottom: 12px;
+    }
+    h4{
+        font-size:25px;
     }
 }
 a,
@@ -34,7 +43,7 @@ a:visited{
     text-decoration: none !important;
     color: inherit;
 }
-.top-line /*header div:first-child */{
+.top-line {
     height: 7px;
     background: url("../images/line-top.gif") repeat-x ;
 }
@@ -144,10 +153,27 @@ header{
     }
 .wrapper{
     padding-left: 15px;
+    .carousel h3{
+        text-align: center;
+    }
 }
 #owl-demo .item img{
     display: block;
     width: 100%;
     height: auto;
     padding-left: 15px;
+}
+.news-block{
+    h4{
+        a{
+            color: #D53827;
+        }
+        a:hover{
+            color: inherit;
+        }
+        a:active{
+            text-decoration: none;
+            color: inherit;
+        }
+    }
 }
