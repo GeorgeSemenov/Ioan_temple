@@ -11,12 +11,16 @@ h3{
     font-weight: 500;
 }
 @media (max-width: 768px){
+    img{
+        max-width: 300px;
+    }
     h3{
         font-size:15px;
         padding-bottom: 0px;
+        font-weight: 600;
     }
     h4{
-        font-size:10px;
+        font-size:15px;
     }
 }
     @media (min-width:768px)and(max-width: 991px){
@@ -134,6 +138,9 @@ header{
     color: #FFF;
     background-color: #343434;
 }
+.wrapper .button{
+    font-weight: 500;
+}
 .hidden-menu{
     list-style-type:none;
     padding: 0px;
@@ -163,10 +170,12 @@ header{
     height: auto;
     padding-left: 15px;
 }
+footer,
 .news-block{
+    p,
     h4{
         a{
-            color: #D53827;
+            color: #D53827 !important;
         }
         a:hover{
             color: inherit;
@@ -175,5 +184,44 @@ header{
             text-decoration: none;
             color: inherit;
         }
+    }
+    p img{
+        float: left;
+    }
+}
+.divide-line{
+    height: 2px;
+    background: url("../images/border-horiz.gif") repeat-x ;    
+}
+.wrapper>div{
+    padding-bottom: 15px
+}
+.main-news {
+    .button{
+        float: right;
+        margin-right: 5px;
+        clear: both;
+    }
+    strong{
+        font-style: italic;
+    }
+    a+strong{
+        padding-top: 10px;
+    }
+    p {
+        text-align: justify;
+        font-style: italic;
+        span{
+            color:#F00;
+        }
+    }
+}
+.referenses{
+    img {
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0px 0px 3px #c5c2a9;
     }
 }
