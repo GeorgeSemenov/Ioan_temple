@@ -11,9 +11,9 @@
     <link rel="icon" href="../favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="../js/jquery-3.0.0.min.js" type='text/javascript'></script>
+    <script src="js/jquery-3.0.0.min.js" type='text/javascript'></script>
     <!-- Bootstrap -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -21,31 +21,14 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <link href="../css/styles.css" rel="stylesheet">
-    <link rel="stylesheet" href="../fonts/font-awesome/css/font-awesome.min.css">
-    <script src="../js/hiding-menu.js" type='text/javascript'></script>
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+    <script src="js/hiding-menu.js" type='text/javascript'></script>
     
-    <link rel="stylesheet" href="../owl-carousel/owl-carousel/owl.carousel.css">
-    <link rel="stylesheet" href="../owl-carousel/owl-carousel/owl.theme.css">
-    <script src="../owl-carousel/assets/owl-carousel/owl.carousel.js"></script>
+    <!--Carousel-->
+    <link href="Espesial-set-carusel/owl.carousel.css" rel="stylesheet">
+    <link href="Espesial-set-carusel/owl.theme.css" rel="stylesheet">
 </head>
-<script>
-alert("Hello!");
-    
-$(document).ready(function(){
-    $('.fa-bars').click(function () {
-        if (clicked == false) {
-            clicked = true;
-            $('.hiding_menu_element').css({opacity: "1", display: "inherit"});
-            $('#hiding_menu_inner').css({display: "inherit", height: "auto"});
-        } else {
-            clicked = false;
-            $('.hiding_menu_element').css("display", "none");
-            $('#hiding_menu_inner').css("height", "0px");
-        }
-    });
-}
-</script>
 <body  class="container-fluid">
     <div class="top-line">
         <!--top line here!-->
@@ -106,34 +89,10 @@ $(document).ready(function(){
                     </ul>
                 </li>
             </ul>
-            <div class="col-lg-1 col-md-1 col-sm-3 hidden-xs"><!--this column just for right indent--></div>
         </nav>
     </header>
-    <div class="wrapper row col-lg-offset-2 col-md-offset-2 col-lg-8 col-md-8 col-sm-12 col-xs-12">
-        <div class="carousel">
-            <h3>храма святого праведного Иоанна Кроншдатского</h3>
-            <h3>Добро пожаловать к нам!</h3>
-            <div id="owl-example" class="owl-carousel">
-              <div> Your Content </div>
-              <div> Your Content </div>
-              <div> Your Content </div>
-              <div> Your Content </div>
-              <div> Your Content </div>
-              <div> Your Content </div>
-              <div> Your Content </div>
-            </div>
-        </div>
+
     </div>
-       <script>
-            $(document).ready(function() {
-            $("#owl-example").owlCarousel();
-            });
-            alert("helo!");
-        </script>
-
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
 </body>
