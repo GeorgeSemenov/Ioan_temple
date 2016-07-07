@@ -23,7 +23,7 @@ h3{
         font-size:15px;
     }
     header {
-        nav { max-width: 200px;}
+        nav { max-width: 250px;}
     }
 }
     @media (min-width:768px)and(max-width: 991px){
@@ -34,7 +34,10 @@ h3{
         font-size:20px;
     }
     header nav{
-        max-width: 200px;
+        max-width: 250px;
+    }
+    .wrapper{
+        max-width: 700px;   
     }
 }
 @media (min-width:992px){
@@ -46,8 +49,11 @@ h3{
         font-size:25px;
     }
     header{
-        nav {max-width: 920px;}
         nav:first-child div{float: left;}
+    }
+    header,
+    .wrapper{
+        nav {max-width: 920px;}
     }
 }
 a,
@@ -130,7 +136,6 @@ header{
             a+a{
                 margin-top:10px;
                 display: block;
-                width: 200px;
             }
         }
     }
@@ -188,6 +193,7 @@ header{
         padding-bottom: 5px;
     }
 .wrapper{
+    margin: 0 auto;
     padding-left: 15px;
     .carousel h3{
         text-align: center;
