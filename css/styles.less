@@ -36,9 +36,7 @@ h3{
     header nav{
         max-width: 250px;
     }
-    .wrapper{
-        max-width: 700px;   
-    }
+    div.wrapper>*{max-width: 700px;}
 }
 @media (min-width:992px){
     h3{
@@ -51,10 +49,8 @@ h3{
     header{
         nav:first-child div{float: left;}
     }
-    header,
-    .wrapper{
-        nav {max-width: 920px;}
-    }
+    header nav,
+    div.wrapper>* {max-width: 920px;}
 }
 a,
 a:hover,
@@ -194,7 +190,6 @@ header{
     }
 .wrapper{
     margin: 0 auto;
-    padding-left: 15px;
     .carousel h3{
         text-align: center;
     }
