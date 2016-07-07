@@ -22,6 +22,9 @@ h3{
     h4{
         font-size:15px;
     }
+    header {
+        nav { max-width: 200px;}
+    }
 }
     @media (min-width:768px)and(max-width: 991px){
     h3{
@@ -29,6 +32,9 @@ h3{
     }
     h4{
         font-size:20px;
+    }
+    header nav{
+        max-width: 200px;
     }
 }
 @media (min-width:992px){
@@ -38,6 +44,10 @@ h3{
     }
     h4{
         font-size:25px;
+    }
+    header{
+        nav {max-width: 920px;}
+        nav:first-child div{float: left;}
     }
 }
 a,
@@ -70,11 +80,10 @@ a:visited{
 	transition: all @time ease;
 }
 header{
-    /*border-style: solid; border-width: 7px 0px 0px;
-    border-image: url("../images/line-top.gif") 7 0 0 repeat;*/
     .border-top-image-rule("../images/line-top.gif" , 7);
     padding-top: 20px;
     background: url("../images/tail-header.gif") repeat  ;
+    min-height: 250px;
     li.active{
         .active-design-list-item-rule;
         a {
@@ -96,9 +105,6 @@ header{
         .transition-rule(0.7s);
         opacity: 1;
     }
-    nav>a {
-        float: left;
-    }
     .dropdown-list{
         top: 43px;
         list-style-type:none;
@@ -108,7 +114,7 @@ header{
         position: absolute;
         visibility: hidden;
         opacity: 0;
-        .transition-rule(0.1s);
+        .transition-rule(0.3s);
     }
     ul{
         li + li{
@@ -118,9 +124,25 @@ header{
             color: inherit !important;
         }
     }
-    nav:first-child{
-        height: auto;
+    nav{
+        margin: 0 auto;
+        div {
+            a+a{
+                margin-top:10px;
+                display: block;
+                width: 200px;
+            }
+        }
+    }
+    nav:first-child div{
         padding-bottom: 20px;
+    }
+    nav>ul{
+        display: inline-block;
+        margin-top: 16px;
+    }
+    nav>a {
+        float: left;
     }
    .dropdown-list li{
         padding-left: 14px;
@@ -130,7 +152,6 @@ header{
         margin-right: 15px;
         cursor: pointer;
         .transition-rule;
-        float: left;
     }
 }
 .button{
@@ -159,8 +180,6 @@ header{
     .transition-rule;
     .active-design-list-item-rule;
     padding-right: 20px;
-    clear: left;
-    float: left;
     li{
         padding-top: 5px;
     }
@@ -199,10 +218,6 @@ footer,
     p img{
         float: left;
     }
-}
-.divide-line{
-    height: 2px;
-    background: url("../images/border-horiz.gif") repeat-x ;    
 }
 .wrapper>div{
     padding-bottom: 15px
