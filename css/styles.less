@@ -25,8 +25,19 @@ h3{
     header {
         nav { max-width: 250px;}
     }
+    .wrapper{
+        text-align: center;
+        .kalendar {
+            padding-left: 15px;
+            padding-right: 15px;
+            a {
+            font-size: inherit;
+            }
+        }
+    }
+    footer div.with-full-size-scrin{display: none;}
 }
-    @media (min-width:768px)and(max-width: 991px){
+@media (min-width:768px)and(max-width: 991px){
     h3{
         font-size:25px;
     }
@@ -36,7 +47,7 @@ h3{
     header nav{
         max-width: 250px;
     }
-    div.wrapper>*{max-width: 700px;}
+    .box-align-center-rule(700px);
 }
 @media (min-width:992px){
     h3{
@@ -49,8 +60,7 @@ h3{
     header{
         nav:first-child div{float: left;}
     }
-    header nav,
-    div.wrapper>* {max-width: 920px;}
+    .box-align-center-rule (920px);
 }
 a,
 a:hover,
@@ -58,6 +68,28 @@ a:active,
 a:visited{
     text-decoration: none !important;
     color: inherit;
+}
+.box-align-center-rule(@max-width-content){
+    header nav,
+    div.wrapper>*,
+    footer {
+        max-width: @max-width-content; 
+        margin: 0 auto;
+    }
+    div.news-column,
+    div.kalendar{
+        max-width: (@max-width-content - 20) / 3;
+        display: inline-block;
+        padding-left: 10px;
+    }
+    div.kalendar{
+        float: left;
+    }
+    div.kalendar + div{
+        max-width: (@max-width-content - 20) *2 / 3;
+        display: inline-block;
+    }
+    div.with-small-size-scrin{display: none;}
 }
 .border-top-image-rule (@url , @top-width:7, @top-width-px:7px){
     -moz-border-image: url(@url) @top-width 0 0 repeat;
@@ -170,9 +202,6 @@ header{
     color: #FFF;
     background-color: #343434;
 }
-.wrapper .button{
-    font-weight: 500;
-}
 .hidden-menu{
     list-style-type:none;
     padding: 0px;
@@ -189,9 +218,11 @@ header{
         padding-bottom: 5px;
     }
 .wrapper{
-    margin: 0 auto;
     .carousel h3{
         text-align: center;
+    }
+    .button{
+        font-weight: 500;
     }
 }
 #owl-demo .item img{
@@ -200,21 +231,35 @@ header{
     height: auto;
     padding-left: 15px;
 }
+.divide-line:nth-of-type(1){
+    .border-top-image-rule("../images/border-horiz.gif", 2, 2px);
+    height: 2px;
+    max-width: none !important;
+    padding-bottom: 0px !important;
+}
+.divide-line{
+    .border-top-image-rule("../images/tail-bg-footer.gif", 2, 2px);
+    height: 2px;
+    max-width: none !important;
+    padding-bottom: 0px !important;
+}
 footer,
 .news-block{
-    .border-top-image-rule("../images/border-horiz.gif", 2, 2px);
     p,
     h4{
         a{
             color: #D53827 !important;
         }
         a:hover{
-            color: inherit;
+            color: inherit !important;
         }
         a:active{
             text-decoration: none;
             color: inherit;
         }
+    }
+    p a{
+        font-size: 18px;
     }
     p img{
         float: left;
@@ -237,11 +282,13 @@ footer,
     }
     p {
         text-align: justify;
-        font-style: italic;
         span{
             color:#F00;
         }
     }
+}
+.end-main-news{
+    clear: left;
 }
 .referenses{
     img {
@@ -250,5 +297,16 @@ footer,
         border-radius: 10px;
         background-color: #fff;
         box-shadow: 0px 0px 3px #c5c2a9;
+    }
+}
+footer{
+    padding-top: 30px;
+    padding-left: 55px;
+    padding-bottom: 40px;
+    a  {font-size: 14px !important;}
+    div + div{
+        position: relative;
+        left: 50px;
+        bottom: 20px;
     }
 }
