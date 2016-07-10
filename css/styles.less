@@ -2,7 +2,7 @@ body {
     color: #343434;
     text-transform: uppercase;
     font-size: 14px;
-    background: url("../images/bg-body.gif") repeat /*#E6E4D7*/;
+    background: url("../images/tail-cont.gif") repeat /*#E6E4D7*/;
     padding-left: 0px;
     padding-right: 0px;
     font-family: "PT Serif Cation",serif;
@@ -51,7 +51,7 @@ h3{
     header nav{
         max-width: 250px;
     }
-    .box-align-center-rule(700px);
+    .common-box-design(700px);
     header div.contain-button{margin-top: 15px;}
 }
 @media (min-width:992px){
@@ -65,7 +65,7 @@ h3{
     header{
         nav:first-child div{float: left;}
     }
-    .box-align-center-rule (920px);
+    .common-box-design (920px);
 }
 a,
 a:hover,
@@ -74,7 +74,7 @@ a:visited{
     text-decoration: none !important;
     color: inherit;
 }
-.box-align-center-rule(@max-width-content){
+.common-box-design(@max-width-content){
     header nav,
     div.wrapper>*,
     footer {
@@ -95,6 +95,10 @@ a:visited{
         display: inline-block;
     }
     div.with-small-size-scrin{display: none;}
+    div.wrapper div.carousel{
+        max-width: @max-width-content;
+        margin: 0 auto;
+    }
 }
 .border-top-image-rule (@url , @top-width:7, @top-width-px:7px){
     -moz-border-image: url(@url) @top-width 0 0 repeat;
@@ -123,6 +127,7 @@ header{
     padding-top: 20px;
     background: url("../images/tail-header.gif") repeat  ;
     min-height: 250px;
+    margin-bottom: -18px;
     li.active{
         .active-design-list-item-rule;
         a {
@@ -130,7 +135,8 @@ header{
             background-color: inherit !important;
         }
     }
-    li>a:hover{
+    li>a:hover,
+    ul.dropdown-list li:hover{
         color: #D53827 !important;
     }
     ul.nav>li:hover , li>a:hover{
@@ -223,6 +229,12 @@ header{
         padding-bottom: 5px;
     }
 .wrapper{
+    .contain-carousel{
+        padding-top: 15px;
+        background-image: url(../images/bg-body.gif);
+        max-width: none !important;
+        //margin: 0 auto;
+    }
     .carousel h3{
         text-align: center;
     }
@@ -240,14 +252,16 @@ header{
     padding-left: 15px;
     padding-right: 15px;
 }
-.divide-line:nth-of-type(1){
+div.contain-carousel + div.divide-line,
+div.news-block + div.divide-line{
     .border-top-image-rule("../images/border-horiz.gif", 2, 2px);
     height: 2px;
     max-width: none !important;
     padding-bottom: 0px !important;
 }
-.divide-line{
-    .border-top-image-rule("../images/tail-bg-footer.gif", 2, 2px);
+div.main-news + div.divide-line,
+div.referenses + div.divide-line{
+    .border-top-image-rule("../images/tail-bg-footer.gif", 2, 2px) !important;
     height: 2px;
     max-width: none !important;
     padding-bottom: 0px !important;
