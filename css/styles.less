@@ -51,7 +51,7 @@ h3{
     header nav{
         max-width: 250px;
     }
-    .common-box-design(700px);
+    .common-box-design-rule(700px);
     header div.contain-button{margin-top: 15px;}
 }
 @media (min-width:992px){
@@ -65,7 +65,7 @@ h3{
     header{
         nav:first-child div{float: left;}
     }
-    .common-box-design (920px);
+    .common-box-design-rule (920px);
 }
 a,
 a:hover,
@@ -74,7 +74,8 @@ a:visited{
     text-decoration: none !important;
     color: inherit;
 }
-.common-box-design(@max-width-content){
+a:focus{background-color: inherit !important;}
+.common-box-design-rule(@max-width-content){
     header nav,
     div.wrapper>*,
     footer {
@@ -213,6 +214,7 @@ header{
     color: #FFF;
     background-color: #343434;
 }
+.button:focus{background-color: #D53827 !important;}
 .hidden-menu{
     list-style-type:none;
     padding: 0px;
