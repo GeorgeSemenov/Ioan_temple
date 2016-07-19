@@ -10,7 +10,16 @@ body {
 h3{
     font-weight: 500;
 }
-@media (max-width: 768px){
+// These blocks resposible for adaptability
+@max-mobile-scrin-size: 700px;
+    //This block resposible for mobile mode
+@media (max-width: @max-mobile-scrin-size){
+    .non-mobile-bar{
+        display:none;
+    }
+    .carousel{
+        display: none;
+    }
     h3{
         font-size:15px;
         padding-bottom: 0px;
@@ -41,32 +50,46 @@ h3{
         div.with-full-size-scrin{display: none;}
     }
 }
-@media (min-width:769px)and(max-width: 991px){
-    h3{
-        font-size:25px;
+    //This block resposible for non mobile mode
+@media (min-width:@max-mobile-scrin-size){    
+    .mobile-bar{
+        display:none;
     }
-    h4{
-        font-size:20px;
+    //This block resposible for suitable font-size for tablet mode
+    @media (min-width:(@max-mobile-scrin-size+1))and(max-width: 991px){
+        h3{
+            font-size:25px;
+        }
+        h4{
+            font-size:20px;
+        }
+        header nav{
+            max-width: 250px;
+        }
+        .common-box-design-rule(700px);
+        header {
+            div.contain-button{margin-top: 15px;}
+            .nav>li>a{
+                padding: 10px 4px;
+                font-size: 12px;
+            }
+        }
     }
-    header nav{
-        max-width: 250px;
+    @media (min-width:992px){
+        h3{
+            font-size: 35px;
+            padding-bottom: 12px;
+        }
+        h4{
+            font-size:25px;
+        }
+        /*header{
+            nav:first-child div{float: left;}
+        }*/
+        .common-box-design-rule (920px);
     }
-    .common-box-design-rule(700px);
-    header div.contain-button{margin-top: 15px;}
 }
-@media (min-width:992px){
-    h3{
-        font-size: 35px;
-        padding-bottom: 12px;
-    }
-    h4{
-        font-size:25px;
-    }
-    header{
-        nav:first-child div{float: left;}
-    }
-    .common-box-design-rule (920px);
-}
+// end of block resposible for adaptability
 a,
 a:hover,
 a:active,
@@ -172,6 +195,9 @@ header{
     }
     nav{
         margin: 0 auto;
+        div.non-mobile-bar div:first-child{
+            float: left;
+        }
         div {
             a+a{
                 margin-top:10px;
