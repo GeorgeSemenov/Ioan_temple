@@ -78,6 +78,7 @@ h3{
         header {
             ul.dropdown-list {
                 top: 35px;
+                min-width: 70px;
                 li{
                     padding-left: 5px;    
                     padding-right: 5px;    
@@ -295,12 +296,18 @@ header{
         padding-left: 15px;
     }
 }
-#owl-demo .item img{
-    display: block;
-    width: 100%;
-    height: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+#owl-demo{
+    div.owl-controls div.owl-buttons{
+        div.owl-prev{display: none;}
+        div.owl-next{display: none;}
+    }
+    .item img{
+        display: block;
+        width: 100%;
+        height: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
 div.contain-carousel + div.divide-line,
 div.news-block + div.divide-line{
