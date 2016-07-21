@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="ru">
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
+    <title>Главная страница сайта</title>
+    <meta name="description" content="Сайт храма Святого Праведного Иоанна Кронштадтского, находящегося в городе Мытищи" />
 
+    <!--favicon-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/jquery-3.0.0.min.js" type='text/javascript'></script>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -15,13 +21,181 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
-  <body>
-    <h1>Привет, мир!</h1>
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+    <script src="js/hiding-menu.js" type='text/javascript'></script>
+    
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+    <script src="owl-carousel/owl.carousel.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="mobile-bar">
+                <h3>Сайт храма святого праведного Иоанна Кронштадского</h3>
+                <i class="fa fa-bars"></i>
+                <ul class="hidden-menu">
+                        <li><a href="http://hramvtayninke.ru/">Главная</a></li>
+                        <li><a href="http://hramvtayninke.ru/o-xrame/duxovenstvo.html">о Храме</a></li>
+                        <li><a href="http://hramvtayninke.ru/bogosluzheniya/raspisanie-bogosluzhenij.html">Богослужения</a></li>
+                        <li><a href="http://hramvtayninke.ru/media-arxiv/albums/">Медиа архив</a></li>
+                        <li><a href="http://hramvtayninke.ru/kontaktyi.html">Контакты</a></li>
+                </div>
+                    </ul>
+            </div>
+            <div class="non-mobile-bar">
+                <div>
+                    <a href="http://hramvtayninke.ru/"><img src="images/logo.png" alt=" "></a>
+                    <a href="http://hramvtayninke.ru/" class="button">Ход строительства</a>
+                </div>
+                <!--This is menu bar -->
+                <ul class="nav nav-pills">
+                    <li class="active"><a href="http://hramvtayninke.ru/">главная</a></li>
+                    <li>
+                        <a href="http://hramvtayninke.ru/o-xrame/duxovenstvo.html">о храме</a>
+                        <ul class="dropdown-list">
+                            <li><a href="http://hramvtayninke.ru/o-xrame/istoriya-xrama.html">История храма</a></li>
+                            <li><a href="http://hramvtayninke.ru/o-xrame/duxovenstvo.html">Духовенство</a></li>
+                            <li><a href="http://hramvtayninke.ru/index/zhitie-ioanna-kronshtadtskogo.html">Житие Ионна<br>      Кронштадского</a></li>
+                            <li><a href="http://hramvtayninke.ru/o-xrame/zhitie-matronyi-moskovskoj.html">Житие Матроны<br>Московской</a></li>
+                            <li><a href="http://hramvtayninke.ru/o-xrame/voskresnaya-shkola.html">Воскресная<br> школа</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="http://hramvtayninke.ru/bogosluzheniya/raspisanie-bogosluzhenij.html">богослужения</a>
+                        <ul class="dropdown-list">
+                            <li><a href="http://hramvtayninke.ru/bogosluzheniya/raspisanie-bogosluzhenij.html">Расписание</a></li>
+                            <li><a href="http://hramvtayninke.ru/bogosluzheniya/tainstva/">Таинства церкви</a></li>
+                            <li><a href="http://hramvtayninke.ru/bogosluzheniya/povedenie-v-xrame.html">Поведение в<br>Храме</a></li>
+                            <li><a href="http://hramvtayninke.ru/bogosluzheniya/o-czerkovnyix-bogosluzheniyax.html">О церковных<br>Богослужениях</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="http://hramvtayninke.ru/media-arxiv/albums/">медиа архив</a>
+                        <ul class="dropdown-list">
+                            <li><a href="http://hramvtayninke.ru/media-arxiv/novosti/">Новости</a></li>
+                            <li><a href="http://hramvtayninke.ru/media-arxiv/albums/">Альбомы</a></li>
+                            <li><a href="http://hramvtayninke.ru/media-arxiv/materialyi.html">Православные<br>ресурсы</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="http://hramvtayninke.ru/kontaktyi.html">контакты</a>
+                        <ul class="dropdown-list">
+                            <li><a href="http://hramvtayninke.ru/pomoshh.html">Помощь</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="wrapper">
+        <div class="contain-carousel">
+           <div class="carousel">
+            <h3>храма святого праведного Иоанна Кроншдатского</h3>
+            <h3>Добро пожаловать к нам!</h3>
+            <div id="owl-demo" class="owl-carousel">
+                <div class="item"><img src="images/carousel/1.jpg" alt=" "></div>
+                <div class="item"><img src="images/carousel/2.jpg" alt=" "></div>
+                <div class="item"><img src="images/carousel/3.jpg" alt=" "></div>
+                <div class="item"><img src="images/carousel/4.jpg" alt=" "></div>
+                <div class="item"><img src="images/carousel/5.jpg" alt=" "></div>
+            </div>
+            <script>
+                  $(document).ready(function() {
+                  $("#owl-demo").owlCarousel({
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+                  navigation : true,
+                  slideSpeed : 300,
+                  paginationSpeed : 400,
+                  singleItem : true
+
+                  // "singleItem:true" is a shortcut for:
+                  // items : 1, 
+                  // itemsDesktop : false,
+                  // itemsDesktopSmall : false,
+                  // itemsTablet: false,
+                  // itemsMobile : false
+
+                  });
+                });
+            </script>
+        </div>
+        </div>
+        <div class="divide-line"></div>
+        <div class="news-block">
+            <div class="news-column">
+                <h3>Новости:</h3>
+                <h4>
+                    <a href="http://hramvtayninke.ru/index/novosti-rpcz.html">Русской православной церкви</a>
+                </h4>
+                <a href="http://hramvtayninke.ru/index/novosti-rpcz.html" class="button">Подробнее</a>
+            </div>
+            <div class="news-column">
+                <h3>Новости:</h3>
+                <h4>
+                    <a href="http://hramvtayninke.ru/index/novosti-rpcz.htmlhttp://hramvtayninke.ru/index/novosti-rpcz.html">Московской епархии <br> <br></a>
+                </h4>
+                <a href="http://hramvtayninke.ru/index/novosti-rpcz.html" class="button">Подробнее</a>
+            </div>
+            <div class="news-column">
+                <h3>Новости:</h3>
+                <h4>
+                    <a href="http://mitishi-blagoch.ru/news">Мытищинского благочиния <br> <br></a>
+                </h4>
+                <a href="http://mitishi-blagoch.ru/news" class="button">Подробнее</a>
+            </div>
+        </div>
+        <div class="divide-line"></div>
+        <div class="news-block main-news">
+            <div class="kalendar">
+                <h3>Календарь:</h3>
+                <p>3 июля 2016 г. ( 20 июня ст.ст.), воскресенье.</p>
+                <p><a href="http://days.pravoslavie.ru/Images/im3471.htm"><img src="images/is3471.jpg" alt=" "></a><a href="http://days.pravoslavie.ru/name/6981.htm">Неделя 2-я по пяти<wbr>десятнице всех святых в земле российской просиявших</a> (<a href="http://days.pravoslavie.ru/Images/ii6981_493.htm">икона</a>)</p>
+                <p>Сщмч. <a href="http://days.pravoslavie.ru/name/1526.htm">Мефодия</a> (<a href="http://days.pravoslavie.ru/Images/ii1526_956.htm">икона</a>), еп. Патарского. Блгв. кн. <a href="http://days.pravoslavie.ru/name/517.htm">Глеба</a> Владимирского (сына св. <a href="http://days.pravoslavie.ru/name/177.htm">Андрея</a> (<a href="http://days.pravoslavie.ru/Images/ii177_105.htm">икона</a>) Боголюбского). Мч. <a href="http://days.pravoslavie.ru/name/949.htm">Инны</a> (<a href="http://days.pravoslavie.ru/Images/ii949_1797.htm">икона</a>), <a href="http://days.pravoslavie.ru/name/1795.htm">Пинны</a> (<a href="http://days.pravoslavie.ru/Images/ii1795&3973.htm">икона</a>) и <a href="http://days.pravoslavie.ru/name/1870.htm">Риммы</a> (<a href="http://days.pravoslavie.ru/Images/ii1870_1998.htm">икона</a>). Мчч. <a href="http://days.pravoslavie.ru/name/256.htm">Аристоклия</a> пресвитера, <a href="http://days.pravoslavie.ru/name/594.htm">Димитриана</a> диакона и <a href="http://days.pravoslavie.ru/name/305.htm">Афанасия</a> чтеца. Свт. <a href="http://days.pravoslavie.ru/name/1336.htm">Левкия</a> исп., еп. Врунтисиопольского. Свт. <a href="http://days.pravoslavie.ru/name/1537.htm">Мины</a>, еп. Полоцкого. Прав. <a href="http://days.pravoslavie.ru/name/14533.htm">Николая</a> (<a href="http://days.pravoslavie.ru/Images/ii14533&4326.htm">икона</a>) Кавасилы (Эллад.). Перенесение мощей свт. <a href="http://days.pravoslavie.ru/name/553.htm">Гурия</a> (<a href="http://days.pravoslavie.ru/Images/ii553_367.htm">икона</a>), архиеп. Казанского. <a href="http://days.pravoslavie.ru/name/6891.htm">Собор</a> (<a href="http://days.pravoslavie.ru/Images/ii2909_2426.htm">икона</a>) всех преподобных и Богоносных отцев, во Святой Горе Афонской просиявших. <a href="http://days.pravoslavie.ru/name/2909.htm">Моденской</a> (<a href="http://days.pravoslavie.ru/Images/ii2909_2426.htm">икона</a>) (Косинской) иконы Божией Матери.</p>
+                <p>
+                    <a href="http://days.pravoslavie.ru/name/14277.htm">Коробейниковской казанской иконы Божией матери</a>
+                </p>
+                <div class="contain-button"><a href="http://hramvtayninke.ru/" class="button">Подробнее</a></div>
+            </div>
+            <div>
+                <h3>Новости прихода:</h3>
+                <div class="contain-button"><a href="http://hramvtayninke.ru/media-arxiv/novosti/novosti-prixoda.html" class="button">Читать все новости</a></div>
+                <strong>Востановим порушенные святыни!</strong>
+                <p><span>ОБРАЩЕНИЕ МИТРОПОЛИТА КРУТИЦКОГО И КОЛОМЕНСКОГО ЮВЕНАЛИЯ К ДУХОВЕНСТВУ, МИРЯНАМ, ОБЩЕСТВЕННЫМ ОРГАНИЗАЦИЯМ, БЛАГОТВОРИТЕЛЯМ И ЖИТЕЛЯМ ПОДМОСКОВЬЯ...</span></p>
+                <div class="contain-button"><a href="http://hramvtayninke.ru/media-arxiv/novosti/vosstanovim-porushennyie-svyatyini!/" class="button">Подробнее</a></div>
+                <strong>Построим новый храм!</strong>
+                <p>Братия и сестры! 14 июня 2015 года Православная Церковь будет праздновать 25-летнюю годовщину прославления в лике святых Великого Пастыря и молитвенника Земли Русской – святого праведного Иоанна Кронштадтского (1829-1908 гг.)...</p>
+                <div class="contain-button"><a href="http://hramvtayninke.ru/media-arxiv/novosti/postroim-novyij-xram/" class="button">Подробнее</a></div>
+            </div>
+            <div class="end-main-news"><!--This block is for clearing float at news-block--></div>
+        </div>
+        <div class="divide-line"></div>
+        <div class="referenses">
+            <h3>Ссылки:</h3>
+            <div><a href="http://sohranihram.ru/"><img src="images/fond.jpg" alt=" "></a></div>
+            <div><a href="http://pravprihod.ru/"><img src="images/Ioann.jpg" alt=" "></a></div>
+            <div><a href="http://radiovera.ru/"><img src="images/vera.png" alt=" "></a></div>
+        </div>
+        <div class="divide-line"></div>
+    </div>
+    <footer>
+        <div>
+            <a href="https://new.vk.com/hramvtayninke">
+                <img src="images/icon-4.png" alt="">
+            </a>
+        </div>
+        <div class="with-full-size-scrin">
+            <p><a href="http://www.patriarchia.ru/">Русская православная церковь</a> | <a href="http://www.mepar.ru/">Московская Епархия</a> | <a href="http://mitishi-blagoch.ru/">Мытищинское благочиние</a><br>
+Храм Святого Праведного Иоанна Кронштадтского </p>
+        </div>
+        <div class="with-small-size-scrin">
+            <p><a href="http://www.patriarchia.ru/">Русская православная церковь</a><br><a href="http://www.mepar.ru/">Московская Епархия</a><br><a href="http://mitishi-blagoch.ru/">Мытищинское благочиние</a><br>
+Храм Святого Праведного Иоанна Кронштадтского</p>
+        </div>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+    </footer>
+</body>
+
 </html>
