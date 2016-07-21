@@ -55,6 +55,12 @@ h3{
     .mobile-bar{
         display:none;
     }
+    @media (min-width:700px) and (max-width:735px){
+        ul.nav-pills>li:last-child>ul li{
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    }
     //This block resposible for suitable font-size for tablet mode
     @media (min-width:(@max-mobile-scrin-size+1))and(max-width: 991px){
         h3{
@@ -179,7 +185,6 @@ header{
         list-style-type:none;
         padding: 0px;
         padding-right: 10px ;
-        min-width: 121px;
         position: absolute;
         visibility: hidden;
         opacity: 0;
