@@ -29,7 +29,7 @@ h3{
         font-size:15px;
     }
     header {
-        //padding-top: 0px !important;
+        padding-top: 0px !important;
         nav { 
             padding-left: 5px;
         }
@@ -52,6 +52,7 @@ h3{
         padding: 10px 0 40px 10px !important;
         div.with-full-size-scrin{display: none;}
     }
+    @media (min-width: 632px){.fa-bars{top: 17px !important;}}
 }
     //This block resposible for non mobile mode
 @media (min-width:@max-mobile-scrin-size){    
@@ -232,6 +233,10 @@ header{
             i+h3{
                 padding-right: 20px;
                 min-height: 25px;
+                max-width: 85%;
+                position: relative;
+                left: 35px;
+                margin-bottom: 12px;
             }
         }
     }
@@ -253,7 +258,8 @@ header{
         margin-right: 15px;
         cursor: pointer;
         .transition-rule;
-        float: left;
+        position: absolute;
+        top: 31px;
     }
 }
 .button{
@@ -357,6 +363,7 @@ footer,
     }
     p img{
         float: left;
+        margin-right: 10px;
     }
 }
 .wrapper>div{
